@@ -33,10 +33,16 @@ I like building web apps, automating repetitive tasks, and running services on m
 
 ### GitHub stats
 
-<div align="center">
-  <img width="48%" src="https://raw.githubusercontent.com/shdwgod/shdwgod/main/profile/stats.svg?v=4363cae" alt="GitHub stats" />&nbsp;&nbsp;
-  <img width="48%" src="https://raw.githubusercontent.com/shdwgod/shdwgod/main/profile/top-langs.svg?v=4363cae" alt="Most used languages" />
-</div>
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/shdwgod/shdwgod/main/profile/stats.svg?v=4363cae" alt="GitHub stats" width="100%" />
+    </td>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/shdwgod/shdwgod/main/profile/top-langs.svg?v=4363cae" alt="Most used languages" width="100%" />
+    </td>
+  </tr>
+</table>
 
 
 ---
