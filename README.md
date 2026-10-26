@@ -8,8 +8,7 @@
 
 <br />
 
-<a href="https://shdw.lol"><img src="https://img.shields.io/badge/website-shdw.lol-8b5cf6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
-<a href="https://github.com/shdwgod?tab=repositories"><img src="https://img.shields.io/badge/projects-explore-18181b?style=for-the-badge&logo=github&logoColor=white" alt="Projects" /></a>
+<a href="https://github.com/shdwgod?tab=repositories"><img src="https://img.shields.io/badge/GitHub-explore-18181b?style=for-the-badge&logo=github&logoColor=white" alt="GitHub repositories" /></a>
 
 </div>
 
@@ -42,21 +41,6 @@ I like the whole process: from an idea and a messy first prototype to something 
 ![Git](https://img.shields.io/badge/Git-18181b?style=for-the-badge&logo=git&logoColor=F05032)
 
 </div>
-
-## featured
-
-<table>
-  <tr>
-    <td width="50%">
-      <h3>🌐 <a href="https://shdw.lol">shdw.lol</a></h3>
-      <p>My personal corner of the internet — a place for projects and experiments.</p>
-    </td>
-    <td width="50%">
-      <h3>🎧 <a href="https://github.com/shdwgod/djcorsa">DJ CORSA</a></h3>
-      <p>A music-focused project built around bringing playback and web functionality together.</p>
-    </td>
-  </tr>
-</table>
 
 ## github stats
 
