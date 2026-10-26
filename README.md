@@ -3,7 +3,6 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:111827,45:312e81,100:7c3aed&text=shdwgod&fontColor=ffffff&fontSize=58&fontAlignY=38&desc=developer%20%7C%20linux%20%7C%20self-hosting&descAlignY=59&descSize=15" width="100%" alt="shdwgod profile banner" />
 
 <p>
-  <a href="https://github.com/shdwgod?tab=followers"><img src="https://img.shields.io/github/followers/shdwgod?label=Followers&style=for-the-badge&color=7c3aed&labelColor=111827&logo=github&logoColor=white" alt="GitHub followers" /></a>
   <a href="https://github.com/shdwgod?tab=repositories"><img src="https://img.shields.io/badge/Public%20Repos-explore-6d28d9?style=for-the-badge&labelColor=111827&logo=github&logoColor=white" alt="Public repositories" /></a>
   <a href="https://github.com/shdwgod?tab=stars"><img src="https://img.shields.io/github/stars/shdwgod?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&color=a78bfa&labelColor=111827&logo=starship&logoColor=white" alt="GitHub stars" /></a>
   <img src="https://komarev.com/ghpvc/?username=shdwgod&style=for-the-badge&color=7c3aed&label=PROFILE+VIEWS" alt="Profile views" />
@@ -24,7 +23,7 @@ I like building web apps, automating repetitive tasks, and running services on m
   <img src="https://img.shields.io/badge/JavaScript-17132b?style=for-the-badge&logo=javascript&logoColor=f7df1e" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Python-17132b?style=for-the-badge&logo=python&logoColor=3776ab" alt="Python" />
   <img src="https://img.shields.io/badge/HTML5-17132b?style=for-the-badge&logo=html5&logoColor=e34f26" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-17132b?style=for-the-badge&logo=css3&logoColor=1572b6" alt="CSS3" />
+  <img src="https://img.shields.io/badge/CSS-17132b?style=for-the-badge&logo=css&logoColor=1572b6" alt="CSS3" />
   <img src="https://img.shields.io/badge/Lua-17132b?style=for-the-badge&logo=lua&logoColor=9b9cff" alt="Lua" />
   <img src="https://img.shields.io/badge/C%2B%2B-17132b?style=for-the-badge&logo=cplusplus&logoColor=00599c" alt="C++" />
   <img src="https://img.shields.io/badge/Linux-17132b?style=for-the-badge&logo=linux&logoColor=fcc624" alt="Linux" />
