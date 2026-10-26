@@ -34,8 +34,8 @@ I like building web apps, automating repetitive tasks, and running services on m
 ### GitHub stats
 
 <div align="center">
-  <img width="49%" src="./profile/stats.svg" alt="GitHub stats" />
-  <img width="49%" src="./profile/top-langs.svg" alt="Most used languages" />
+  <img width="49%" src="./profile/stats.svg?v=2" alt="GitHub stats" />
+  <img width="49%" src="./profile/top-langs.svg?v=2" alt="Most used languages" />
 </div>
 
 
