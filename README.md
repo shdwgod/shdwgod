@@ -38,10 +38,5 @@ I like building web apps, automating repetitive tasks, and running services on m
   <img width="49%" src="./profile/top-langs.svg" alt="Most used languages" />
 </div>
 
-<sub>Stats refresh automatically every day with GitHub Actions.</sub>
 
 ---
-
-<div align="center">
-  <sub>built by curiosity, powered by late-night debugging.</sub>
-</div>
