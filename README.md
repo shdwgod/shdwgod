@@ -5,7 +5,7 @@
 <p>
   <a href="https://github.com/shdwgod?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-Explore-7c3aed?style=for-the-badge&logo=github&logoColor=white&labelColor=18122b" alt="Explore projects" /></a>
   <a href="https://github.com/shdwgod?tab=stars"><img src="https://img.shields.io/github/stars/shdwgod?style=for-the-badge&color=c4b5fd&label=STARS&labelColor=18122b&logo=github&logoColor=c4b5fd" alt="GitHub stars" /></a>
-  <img src="https://komarev.com/ghpvc/?username=shdwgod&style=for-the-badge&color=blueviolet&label=VIEWS&labelColor=18122b" alt="Profile views" />
+  <img src="https://img.shields.io/badge/VIEWS-Profile-7c3aed?style=for-the-badge&labelColor=18122b&logo=github&logoColor=white" alt="Profile views" />
 </p>
 
 </div>
