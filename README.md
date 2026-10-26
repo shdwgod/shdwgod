@@ -3,9 +3,9 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:111827,45:312e81,100:7c3aed&text=shdwgod&fontColor=ffffff&fontSize=58&fontAlignY=38&desc=developer%20%7C%20linux%20%7C%20self-hosting&descAlignY=59&descSize=15" width="100%" alt="shdwgod profile banner" />
 
 <p>
-  <a href="https://github.com/shdwgod?tab=repositories"><img src="https://raw.githubusercontent.com/shdwgod/shdwgod/main/profile/badge-projects.svg" alt="Explore projects" /></a>
-  <a href="https://github.com/shdwgod?tab=stars"><img src="https://raw.githubusercontent.com/shdwgod/shdwgod/main/profile/badge-stars.svg" alt="GitHub stars" /></a>
-  <img src="https://raw.githubusercontent.com/shdwgod/shdwgod/main/profile/badge-views.svg" alt="Profile views" />
+  <a href="https://github.com/shdwgod?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-Explore-7c3aed?style=for-the-badge&logo=github&logoColor=white&labelColor=18122b" alt="Explore projects" /></a>
+  <a href="https://github.com/shdwgod?tab=stars"><img src="https://img.shields.io/github/stars/shdwgod?style=for-the-badge&color=c4b5fd&label=STARS&labelColor=18122b&logo=github&logoColor=c4b5fd" alt="GitHub stars" /></a>
+  <img src="https://komarev.com/ghpvc/?username=shdwgod&style=for-the-badge&color=7c3aed&label=VIEWS&labelColor=18122b" alt="Profile views" />
 </p>
 
 </div>
