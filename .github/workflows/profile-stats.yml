@@ -25,17 +25,17 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=shdwgod&show_icons=true&hide_title=true&hide_border=true&bg_color=0D1117&text_color=C9D1D9&icon_color=A78BFA&include_all_commits=true
+          options: username=shdwgod&show_icons=true&hide_title=true&hide_border=true&bg_color=0D1117&text_color=C9D1D9&icon_color=A78BFA&include_all_commits=true&count_private=true
           path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Generate top languages
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=shdwgod&layout=compact&hide_border=true&bg_color=0D1117&text_color=C9D1D9&title_color=C4B5FD&langs_count=6
+          options: username=shdwgod&layout=compact&hide_border=true&bg_color=0D1117&text_color=C9D1D9&title_color=C4B5FD&langs_count=6&count_private=true
           path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Commit updated cards
         run: |
