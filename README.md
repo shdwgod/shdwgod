@@ -12,37 +12,48 @@
 
 ---
 
-### About me
+### About
 
-I like building web apps, automating repetitive tasks, and running services on my own hardware. Most of what I know comes from experimenting, fixing things, and making each setup a little better.
+I build software, automate workflows, and self-host services. I enjoy working across the stack — from low-level tooling and desktop applications to web interfaces, infrastructure, and Linux systems.
 
-### Tools & technologies
+Most of my projects start with a problem I want to solve. I like understanding how things work, experimenting with different approaches, and polishing the result until it feels right.
+
+### Technologies
 
 <p>
+  <img src="https://img.shields.io/badge/Rust-17132b?style=for-the-badge&logo=rust&logoColor=ffffff" alt="Rust" />
   <img src="https://img.shields.io/badge/TypeScript-17132b?style=for-the-badge&logo=typescript&logoColor=3178c6" alt="TypeScript" />
   <img src="https://img.shields.io/badge/JavaScript-17132b?style=for-the-badge&logo=javascript&logoColor=f7df1e" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/C%2B%2B-17132b?style=for-the-badge&logo=cplusplus&logoColor=00599c" alt="C++" />
   <img src="https://img.shields.io/badge/Python-17132b?style=for-the-badge&logo=python&logoColor=3776ab" alt="Python" />
   <img src="https://img.shields.io/badge/HTML5-17132b?style=for-the-badge&logo=html5&logoColor=e34f26" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS-17132b?style=for-the-badge&logo=css&logoColor=1572b6" alt="CSS3" />
   <img src="https://img.shields.io/badge/Lua-17132b?style=for-the-badge&logo=lua&logoColor=9b9cff" alt="Lua" />
-  <img src="https://img.shields.io/badge/C%2B%2B-17132b?style=for-the-badge&logo=cplusplus&logoColor=00599c" alt="C++" />
   <img src="https://img.shields.io/badge/Linux-17132b?style=for-the-badge&logo=linux&logoColor=fcc624" alt="Linux" />
   <img src="https://img.shields.io/badge/Docker-17132b?style=for-the-badge&logo=docker&logoColor=2496ed" alt="Docker" />
   <img src="https://img.shields.io/badge/Git-17132b?style=for-the-badge&logo=git&logoColor=f05032" alt="Git" />
 </p>
 
-### GitHub stats
+### GitHub activity
+
+<p>
+  <img src="https://raw.githubusercontent.com/shdwgod/shdwgod/main/profile/activity.svg" alt="GitHub activity this year" width="100%" />
+</p>
 
 <table>
   <tr>
-    <td width="50%" align="center">
-      <img src="https://raw.githubusercontent.com/shdwgod/shdwgod/main/profile/stats.svg?v=801f549a" alt="GitHub stats" width="100%" />
-    </td>
-    <td width="50%" align="center">
-      <img src="https://raw.githubusercontent.com/shdwgod/shdwgod/main/profile/top-langs.svg?v=0451edc7" alt="Most used languages" width="100%" />
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/shdwgod/shdwgod/main/profile/top-langs.svg" alt="Most used languages" width="100%" />
     </td>
   </tr>
 </table>
 
+<sub>Activity stats are generated automatically from GitHub's contribution data and refreshed daily.</sub>
 
 ---
+
+<div align="center">
+  <a href="https://github.com/shdwgod">GitHub</a>
+  ·
+  <a href="https://shdw.lol">Website</a>
+</div>
