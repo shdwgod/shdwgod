@@ -36,12 +36,13 @@ I like building web apps, automating repetitive tasks, and running services on m
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="https://raw.githubusercontent.com/shdwgod/shdwgod/main/profile/activity.svg" alt="GitHub activity this year" width="100%" />
+      <img src="https://raw.githubusercontent.com/shdwgod/shdwgod/main/profile/stats.svg?v=801f549a" alt="GitHub stats" width="100%" />
     </td>
     <td width="50%" align="center">
-      <img src="https://raw.githubusercontent.com/shdwgod/shdwgod/main/profile/top-langs.svg" alt="Most used languages" width="100%" />
+      <img src="https://raw.githubusercontent.com/shdwgod/shdwgod/main/profile/top-langs.svg?v=0451edc7" alt="Most used languages" width="100%" />
     </td>
   </tr>
 </table>
+
 
 ---
