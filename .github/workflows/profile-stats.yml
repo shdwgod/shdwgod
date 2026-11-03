@@ -21,13 +21,100 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate GitHub stats
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: stats
-          options: username=shdwgod&show_icons=true&hide_title=true&hide_border=true&bg_color=0D1117&text_color=C9D1D9&icon_color=A78BFA&include_all_commits=true&count_private=true
-          path: profile/stats.svg
-          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+      - name: Generate yearly GitHub activity
+        env:
+          GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          node <<'NODE'
+          const fs = require("node:fs");
+
+          const year = new Date().getUTCFullYear();
+          const from = `${year}-01-01T00:00:00Z`;
+          const to = new Date().toISOString();
+
+          const query = `
+            query($login: String!, $from: DateTime!, $to: DateTime!) {
+              user(login: $login) {
+                contributionsCollection(from: $from, to: $to) {
+                  totalCommitContributions
+                  totalPullRequestContributions
+                  totalIssueContributions
+                  totalRepositoryContributions
+                }
+              }
+            }
+          `;
+
+          async function main() {
+            const response = await fetch("https://api.github.com/graphql", {
+              method: "POST",
+              headers: {
+                Authorization: `Bearer ${process.env.GH_TOKEN}`,
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                query,
+                variables: { login: "shdwgod", from, to },
+              }),
+            });
+
+            const payload = await response.json();
+
+            if (!response.ok || payload.errors || !payload.data?.user) {
+              throw new Error(JSON.stringify(payload.errors || payload));
+            }
+
+            const stats = payload.data.user.contributionsCollection;
+            const rows = [
+              ["Commits", stats.totalCommitContributions],
+              ["Pull requests", stats.totalPullRequestContributions],
+              ["Issues", stats.totalIssueContributions],
+              ["Repositories", stats.totalRepositoryContributions],
+            ];
+
+            const escape = (value) => String(value).replace(/[&<>"]/g, (char) => ({
+              "&": "&amp;",
+              "<": "&lt;",
+              ">": "&gt;",
+              '"': "&quot;",
+            })[char]);
+
+            const items = rows.map(([label, value], index) => {
+              const y = 78 + index * 25;
+              return `
+                <g transform="translate(28 ${y})">
+                  <circle cx="5" cy="-4" r="3" fill="#A78BFA"/>
+                  <text x="18" y="0" class="label">${escape(label)}</text>
+                  <text x="405" y="0" class="value" text-anchor="end">${escape(value)}</text>
+                </g>
+              `;
+            }).join("");
+
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="467" height="190" viewBox="0 0 467 190" role="img" aria-labelledby="title desc">
+              <title id="title">GitHub activity in ${year}</title>
+              <desc id="desc">${stats.totalCommitContributions} commits, ${stats.totalPullRequestContributions} pull requests, ${stats.totalIssueContributions} issues and ${stats.totalRepositoryContributions} repositories contributed to.</desc>
+              <rect width="466" height="189" x=".5" y=".5" rx="8" fill="#0D1117" stroke="#30363D"/>
+              <text x="28" y="35" class="heading">GitHub activity · ${year}</text>
+              <text x="439" y="35" class="period" text-anchor="end">YEAR TO DATE</text>
+              ${items}
+              <style>
+                .heading{font:600 17px 'Segoe UI',sans-serif;fill:#C4B5FD}
+                .period{font:600 10px 'Segoe UI',sans-serif;fill:#8B949E;letter-spacing:1px}
+                .label{font:500 13px 'Segoe UI',sans-serif;fill:#C9D1D9}
+                .value{font:700 13px 'Segoe UI',sans-serif;fill:#FFFFFF}
+              </style>
+            </svg>`;
+
+            fs.mkdirSync("profile", { recursive: true });
+            fs.writeFileSync("profile/activity.svg", svg);
+            console.log(`Generated activity stats for ${year}: ${stats.totalCommitContributions} commits`);
+          }
+
+          main().catch((error) => {
+            console.error(error);
+            process.exit(1);
+          });
+          NODE
 
       - name: Generate top languages
         uses: stats-organization/github-readme-stats-action@v2
@@ -41,6 +128,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/stats.svg profile/top-langs.svg
+          git add profile/activity.svg profile/top-langs.svg
           git diff --cached --quiet || git commit -m "Update profile stats"
           git push
